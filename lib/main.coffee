@@ -1,4 +1,4 @@
-hogan = require 'hogan.js'
+jade = require 'jade'
 
 module.exports = (template, data, options) -> 
-  hogan.compile(template).render data
+    jade.compile(template, options) data

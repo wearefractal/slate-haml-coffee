@@ -2,11 +2,11 @@
 
 <table>
 <tr> 
-<td>Package</td><td>slate-hogan</td>
+<td>Package</td><td>slate-jade</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>Hogan.js adapter for slate</td>
+<td>Jade adapter for slate</td>
 </tr>
 <tr>
 <td>Node Version</td>
@@ -18,12 +18,12 @@
 
 ```coffee-script
 slate = require 'slate'
-hogan = require 'slate-hogan'
+jade = require 'slate-jade'
 
 server = slate.create()
 server.root "#{__dirname}/public"
 server.enable 'mime', 'static'
-server.engine 'mustache', hogan, {your: 'template data'}
+server.engine 'jade', jade, {your: 'template data'}
 server.start 8080
 ```
 
