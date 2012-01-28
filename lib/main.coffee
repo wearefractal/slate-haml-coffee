@@ -1,4 +1,4 @@
-haml = require 'hamljs'
+hamlc = require 'haml-coffee'
 
 module.exports = (template, data, options) ->
-    haml.render template, options
+    hamlc.compile(template, options) data

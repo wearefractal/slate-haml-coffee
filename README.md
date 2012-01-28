@@ -2,11 +2,11 @@
 
 <table>
 <tr> 
-<td>Package</td><td>slate-haml</td>
+<td>Package</td><td>slate-haml-coffee</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>Haml adapter for slate</td>
+<td>haml-coffee adapter for slate</td>
 </tr>
 <tr>
 <td>Node Version</td>
@@ -18,12 +18,12 @@
 
 ```coffee-script
 slate = require 'slate'
-haml = require 'slate-haml'
+hamlc = require 'slate-haml-coffee'
 
 server = slate.create()
 server.root "#{__dirname}/public"
 server.enable 'mime', 'static'
-server.engine 'haml', haml
+server.engine 'hamlc', hamlc
 server.start 8080
 ```
 
