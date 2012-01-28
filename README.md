@@ -2,11 +2,11 @@
 
 <table>
 <tr> 
-<td>Package</td><td>slate-sass</td>
+<td>Package</td><td>slate-haml</td>
 </tr>
 <tr>
 <td>Description</td>
-<td>Sass adapter for slate</td>
+<td>Haml adapter for slate</td>
 </tr>
 <tr>
 <td>Node Version</td>
@@ -18,12 +18,12 @@
 
 ```coffee-script
 slate = require 'slate'
-sass = require 'slate-sass'
+haml = require 'slate-haml'
 
 server = slate.create()
 server.root "#{__dirname}/public"
 server.enable 'mime', 'static'
-server.engine 'sass', sass
+server.engine 'haml', haml
 server.start 8080
 ```
 

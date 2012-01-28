@@ -1,4 +1,4 @@
-sass = require 'sass'
+haml = require 'hamljs'
 
 module.exports = (template, data, options) ->
-    sass.render template
+    haml.render template, options
