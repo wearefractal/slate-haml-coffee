@@ -1,4 +1,4 @@
-jade = require 'jade'
+sass = require 'sass'
 
-module.exports = (template, data, options) -> 
-    jade.compile(template, options) data
+module.exports = (template, data, options) ->
+    sass.render template
